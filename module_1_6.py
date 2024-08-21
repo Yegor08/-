@@ -4,6 +4,7 @@ print(my_dict.get('Gleb'))
 print(my_dict.get('Vera'))
 my_dict.update({'Polina':'03.11.1988', 'Anna':'18.06.2019'})
 print(my_dict)
+my_dict.pop('Polina')
 my_dict.pop('Anna')
 print(my_dict)
 my_set = {1, 2, 3,'key','book',1,2,3,'key','key1'}
