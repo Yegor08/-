@@ -1,8 +1,11 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 i = 0
-while i < len(my_list):
-    if my_list[i] <= i:
-        break
-    print(my_list[i])
+elem = my_list[i]
+while elem >= 0 and i < len(my_list):
+    elem = my_list[i]
     i += 1
-# не могу понять как вернуться к выполнению условия после достижения нуля 
+    if elem  < 0:
+        break
+    elif elem == 0:
+        continue
+    print(elem)
