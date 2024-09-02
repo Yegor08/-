@@ -7,12 +7,18 @@ n1 = random.choice(list_1)
 #print(a)
 #print(n1
 for i in list_1:
+    print(i)
     j = 0
-    while j < i:
-        while k in [j + 1, i - 2]:
+    while j < i-2:
+        k = j+1
+
+        while k < i-1:
             a = list_2[j]+list_2[j+k]
-            if list_1[i] % a == 0:
-                print(a)
+            if i % a == 0:
+
+                print(list_2[j])
+                print(list_2[j+k])
+            k = k+1
         j += 1
 
 
